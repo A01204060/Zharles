@@ -6,3 +6,8 @@ Especially for the people of age whom with the passing of time, their cognitive 
 The Program has the objective of improving cognitive abilities by playing a game in which your goal is to  remember, recognize and recall information. This is a Memory game of matching pairs, where there will be a table of coordinates in the console, in which the player will have to find and match the correct symbol with its pair that are hidden in the background by typing the coordinate  to show the hidden symbols, the game is completed once all pairs have been found, but  if the player fails to match the pairs three times its game over.
 
 #algorithm
+
+
+# prototype
+
+
