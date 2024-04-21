@@ -1,15 +1,52 @@
-# principal funcion for the contruction of the Grid using for loops and one conditional with the staetment __name__ == '__main__'
-def print_grid(grid):
+import random
+def printString(message):
+""" funcion simple de string para que el jugador escriba su nombre """
+    for i in range(0, len(message)):
+        print(message[i], end=" ")
+    print()
     
-    for row in grid:
-        for column in row:
-            print(column, end=' ')
+def numberList():
+""" Funcion donde se listan los numeros posible a escoger con sus pares que aparecen en la matriz """
+    lista = []
+    for i in range(1,17):
+        lista.append(i)
+    print ("Numeros Posibles: ",lista)
+    return lista
+
+def createMatrix():
+""" funcion donde se define la matriz y se llena de numeros aleatorios (¡aun no esta terminado) """
+    matrix = []
+    for i in range (4):
+        matrix.append([])
+        for j in range (4):
+            matrix[i].append("_")
+    
+    
+    return matrix
+
+def createboard():
+""" funcion donde se crea la tabla del memorama """c
+    board = [["_","_","_","_"],["_","_","_","_"],["_","_","_","_"],["_","_","_","_"]]
+    for i in board:
+        for j in i:
+            print(j," ",end="")
         print()
+    return board
 
-
-if __name__ == '__main__':
-    # list of numbers for the values inside the grid 
-    numbers = [[1, 2, 3, 1],[4, 5, 6, 2],[3, 6, 5, 4]]
-
-
-print_grid(numbers)
+    
+def main():
+    message = str(input("Ingresa nombre de jugador: "))
+    printString(message)
+    print("-------------------------")
+    numberList()
+    print("-------------------------")
+    createMatrix()
+    print("-------------------------")
+    createboard()
+        
+main()
+    
+    
+    
+    
+    
